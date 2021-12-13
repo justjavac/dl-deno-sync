@@ -7,7 +7,7 @@
    ```shell
    wget https://github.com/tencentyun/coscli/releases/download/v0.10.2-beta/coscli-linux
    chmod 755 coscli-linux
-   sudo cp coscli-linux /usr/local/bin/oscli
+   sudo cp coscli-linux /usr/local/bin/coscli
    ```
 
    安装完成后需要[配置参数](https://cloud.tencent.com/document/product/436/63144)
