@@ -14,6 +14,10 @@ if [ $remote_version != $local_version ]; then
     coscli sync ./release-latest.txt cos://dl-deno-js-cn/release-latest.txt
     rm ./release-latest.txt
 
+    wget https://cdn.jsdelivr.net/gh/denoland/dotland@main/versions.json
+    coscli sync ./versions.json cos://dl-deno-js-cn/versions.json
+    rm ./versions.json
+
     # CDN 预热
     for target in 'x86_64-apple-darwin' 'aarch64-apple-darwin' 'x86_64-unknown-linux-gnu' 'x86_64-pc-windows-msvc'
     do
