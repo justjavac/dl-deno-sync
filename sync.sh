@@ -14,7 +14,7 @@ if [ $remote_version != $local_version ]; then
     coscli sync ./release-latest.txt cos://dl-deno-js-cn/release-latest.txt
     rm ./release-latest.txt
 
-    wget https://cdn.jsdelivr.net/gh/denoland/dotland@main/versions.json
+    wget https://releases.deno.dev/versions.json
     coscli sync ./versions.json cos://dl-deno-js-cn/versions.json
     rm ./versions.json
 
